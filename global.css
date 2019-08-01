@@ -1,0 +1,18 @@
+.section-heading {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 42px;
+	line-height: 63px;
+	text-align: center;
+}
+
+section {
+	padding: 80px;
+}
+
+body {
+	font-size: 16px;
+	margin: 0;
+	overflow-x: hidden;
+}
