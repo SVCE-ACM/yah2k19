@@ -11,7 +11,7 @@
 }
 
 .agenda-container {
-	background: rgba(24,46,105,0.45);
+	background: rgba(24,46,105,0.85);
 	mix-blend-mode: normal;
 	border-radius: 15px;
 	width: 100%;
@@ -19,6 +19,7 @@
 	padding: 32px;
 	box-sizing: border-box;
 	margin-top: 56px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .agenda-container:nth-child(2) {
@@ -38,7 +39,7 @@
 .timeline:before {
     width: 3px;
     bottom: 0;
-    background: rgba(174,117,201,0.4);
+    background: #0182AC;
     content: "";
     position: absolute;
     top: 10px;
@@ -57,14 +58,16 @@
     width: 7px;
     top: 10px;
     left: 88px;
-    background: #9d9d9d;
     border-radius: 50%;
-    background-color: #ae75ca;
+    background-color: #fff;
 }
 
 .title {
 	float: left;
 	margin: 0 25px 0 0;
+	font-family: Roboto;
+	font-weight: bold;
+	font-size: 16px;
 }
 
 .timeline-body {
@@ -73,7 +76,9 @@
 }
 
 .timeline-body .text {
-	padding: 0 30px;
+	font-family: Roboto;
+	font-size: 18px;
+	padding-left: 30px;
 }
 
 @media screen and (min-width: 992px) {
