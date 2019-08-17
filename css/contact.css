@@ -1,0 +1,59 @@
+/*css for footer*/
+
+footer{
+		background:rgba(8, 67, 125, 0.805815);
+		height:100%;
+		width:100%;
+}
+
+i{
+	color:white;
+}
+
+.text{
+	color:white;
+	font-family: PT Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 23px;
+	text-align: center;
+}
+
+/*css for contact.html*/
+
+.text1{
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 42px;
+}
+
+.text2{
+	font-family: PT Sans;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 32px;
+}
+
+.text3{
+	color: #0182AC;
+	font-size: 24px;
+}
+
+iframe{
+	height:200px;
+	width:100%;
+}
+
+@media screen and (max-width: 400px) {
+
+.text2{
+	font-size: 27px;
+}
+
+.text3{ 
+		font-size: 17px;
+}
+	
+}
