@@ -1,12 +1,7 @@
-#container-fluid{
-    max-width:75%;
-    margin:0 auto;
-}
-
-
 .hero {
 
-    background: linear-gradient(243.32deg, #182E69 8.35%, rgba(8, 67, 125, 0.805815) 53.05%, rgba(0, 88, 143, 0.550592) 84.58%, rgba(0, 109, 158, 0.389124) 93.35%, rgba(1, 130, 172, 0) 99.45%);
+    background: linear-gradient(231.04deg, #182E69 8.35%, rgba(8, 67, 125, 0.805815) 53.05%, rgba(0, 88, 143, 0.550592) 84.58%, rgba(0, 109, 158, 0.389124) 93.35%, rgba(1, 130, 172, 0) 99.45%),
+    linear-gradient(128.99deg, #182E69 8.4%, rgba(8, 67, 125, 0.805815) 53.34%, rgba(0, 88, 143, 0.550592) 85.05%, rgba(0, 109, 158, 0.389124) 99.99%, rgba(1, 130, 172, 0) 100%);
     mix-blend-mode: soft-light;
     border: 1px solid #000000;
     box-sizing: border-box;
@@ -21,31 +16,22 @@
     margin-top:5%;
 }
 
-
+.box-container {
+    display: flex;
+    justify-content: center;
+}
 
 .box{
     background: #0182AC;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
     border-radius: 20px;
-    /* width:30%; */
-    /* margin:1.66%;
-    margin-top:5%;
-    margin-bottom:5%; */
     text-align: center;
     font-size:35px;
-    padding:2%;
+    padding:32px;
     float:left;
     font-weight:bold;
+    margin-bottom: 32px;
 }
-
-.col-lg-3{
-    margin:4%;
-    height:20%;
-    font-size:30px;
-}
-
-
-
 
 .faqs{
     font-family: Poppins;
@@ -82,3 +68,7 @@
     font-size:25px;
 }
 
+.help-icon {
+    font-size: 32px;
+    vertical-align: sub;
+}
