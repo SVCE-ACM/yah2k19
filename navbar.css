@@ -1,286 +1,73 @@
 #mainnav{
-	position: absolute;
-	width: 100%;
-	height: 72px;
-	left: 0px;
-	top: 0px;
-
 	background: #FFFFFF;
-	box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.5);
+	box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.5);
+	transition: 300ms;
+	position: relative;
+}
+
+.hide {
+	display: none;
 }
 
 #acmicon{
-	position: absolute;
-	width: 100px;
-	height: 40px;
-	left: 100px;
-	top: 15px;
+	width: 120px;
 }
 
-#about{
-	width: 65px;
-	height: 32px;
-	padding-top: 30px;
-
-	font-family: 'PT Sans',sans-serif;
-	font-style: normal;
+.nav-item {
+	display: flex;
+	align-items: center;
+	margin-left: 24px;
+}
+.nav-link {
+	font-family: 'PT Sans', sans-serif;
 	font-weight: bold;
-	font-size: 25px;
-	line-height: 32px;
+	font-size: 24px;
 	text-align: center;
-
-	color: #000000;
+	color: #000;
 }
 
-#domain{
-	width: 65px;
-	height: 32px;
-	padding-top: 30px;
-
-	
-	font-family: 'PT Sans',sans-serif;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 25px;
-	line-height: 32px;
-	text-align: center;
-
+.nav-link:hover {
 	color: #0182AC;
 }
-#faqs{
-	width: 65px;
-	height: 32px;
-	padding-top: 30px;
 
-
-	font-family: PT Sans;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 25px;
-	line-height: 32px;
-	text-align: center;
-
-		color: #000000;
-	}
-
-#sponsor{
-		width: 98px;
-		height: 32px;
-		padding-top: 30px;
-
-		font-family: PT Sans;
-		font-style: normal;
-		font-weight: bold;
-		font-size: 25px;
-		line-height: 32px;
-		text-align: center;
-
-		color: #000000;
-	}
-#agenda{
-		width: 81px;
-		height: 32px;
-		padding-top: 30px;
-
-		font-family: PT Sans;
-		font-style: normal;
-		font-weight: bold;
-		font-size: 25px;
-		line-height: 32px;
-		text-align: center;
-
-		color: #000000;
-	}	
-
-	#venue{
-		width: 66px;
-		height: 32px;
-		padding-top: 30px;
-		padding-bottom: 30px;
-
-		font-family: PT Sans;
-		font-style: normal;
-		font-weight: bold;
-		font-size: 25px;
-		line-height: 32px;
-		text-align: center;
-
-		color: #000000;
-	}
-
-	#button{
-		width: 120px;
-		height: 40px;
-		
-
-		background: #09357A;
-		box-shadow: 2px 4px 0px rgba(0, 0, 0, 0.25);
-		border-radius: 5px;
-	}
-
-	#register{
-		width: 88px;
-		height: 32px;
-		top: 19px;
-
-		font-family: PT Sans;
-		font-style: normal;
-		font-weight: bold;
-		font-size: 25px;
-		line-height: 32px;
-		color: #FFFFFF;
-	}
-
-
-
-@media only screen and (min-width: 940px){
-	#about{
-	position: absolute;
-	width: 65px;
-	height: 32px;
-	left: 40%;
-	top: 19px;
-	padding-top: 0px;
-
-	font-family: 'PT Sans',sans-serif;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 25px;
-	line-height: 32px;
-	text-align: center;
-
-	color: #000000;
-	}
-	#domain{
-	position: absolute;
-	width: 94px;
-	height: 32px;
-	left: 47%;
-	padding-top: 0px;
-
-	top: 19px;
-
-	font-family: 'PT Sans',sans-serif;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 25px;
-	line-height: 32px;
-	text-align: center;
-
-	color: #0182AC;
-	}
-
-
-	#faqs{
-		position: absolute;
-		width: 55px;
-		height: 32px;
-		left: 55%;
-		padding-top: 0px;
-
-		top: 19px;
-
-		font-family: PT Sans;
-		font-style: normal;
-		font-weight: bold;
-		font-size: 25px;
-		line-height: 32px;
-		text-align: center;
-
-		color: #000000;
-	}
-
-	#sponsor{
-		position: absolute;
-		width: 98px;
-		height: 32px;
-		left: 61%;
-		padding-top: 0px;
-
-		top: 19px;
-
-		font-family: PT Sans;
-		font-style: normal;
-		font-weight: bold;
-		font-size: 25px;
-		line-height: 32px;
-		text-align: center;
-
-		color: #000000;
-	}
-
-	#agenda{
-		position: absolute;
-		width: 81px;
-		height: 32px;
-		left: 69%;
-		top: 19px;
-		padding-top: 0px;
-
-		font-family: PT Sans;
-		font-style: normal;
-		font-weight: bold;
-		font-size: 25px;
-		line-height: 32px;
-		text-align: center;
-
-		color: #000000;
-	}	
-
-	#venue{
-		position: absolute;
-		width: 66px;
-		height: 32px;
-	padding-top: 0px;
-
-		left: 76%;
-		top: 19px;
-
-		font-family: PT Sans;
-		font-style: normal;
-		font-weight: bold;
-		font-size: 25px;
-		line-height: 32px;
-		text-align: center;
-
-		color: #000000;
-	}
-
-	#button{
-		position: absolute;
-		width: 120px;
-		height: 40px;
-		left: 85%;
-		top: 19px;
-		padding-top: 4px;
-
-		background: #09357A;
-		box-shadow: 2px 4px 0px rgba(0, 0, 0, 0.25);
-		border-radius: 5px;
-	}
-
-	#register{
-		width: 88px;
-		height: 32px;
-		top: 19px;
-
-		font-family: PT Sans;
-		font-style: normal;
-		font-weight: bold;
-		font-size: 25px;
-		line-height: 32px;
-		color: #FFFFFF;
-	}
-	html {
-	   margin: 0px;
-	   height: 100%;
-	   width: 100%;
-	}
-
-	body {
-	   margin: 0px;
-	   min-height: 100%;
-	   width: 100%;
-	   position: relative;
-	}
+.btn-nav-link {
+	padding: 0;
 }
+
+#nav-register {
+	width: 125px;
+    box-shadow: 2px 4px 0px rgba(0, 0, 0, 0.25);
+
+	font-size: inherit;
+	color: white;
+	background: #09357A;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+}
+
+.navbar-mob-container {
+	position: fixed;
+	display: flex;
+	justify-content: center;
+	padding: 32px;
+	top: 0;
+	left: 100%;
+	transition: 300ms;
+}
+
+.navbar-mob-container.show {
+	right: 0;
+	left: 50%;
+	height: 100%;
+	visibility: visible;
+}
+
+.navbar-mob-container .navbar-mob {
+	padding: 0;
+}
+
+.navbar-mob-container .navbar-mob .nav-item {
+	margin: 0;
+}
+
