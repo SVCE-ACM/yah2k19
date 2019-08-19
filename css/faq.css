@@ -14,6 +14,7 @@
     font-weight:1000;
     font-size:40px;
     margin-top:5%;
+    margin-bottom:4%;
 }
 
 .box-container {
@@ -35,45 +36,16 @@
 
 .faqs{
     font-family: Poppins;
-    margin-bottom:5%;
+    margin-bottom:4%;
     font-weight: 1000;
     font-size:40px;
 }
-
-/*.question{
-    background: #0182AC;
-    border: 3px solid #83CEE2;
-    box-sizing: border-box;
-    padding:2%;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 10px 10px 0px 0px;
-}
-
-.question span{
-    font-size:32px;
-    margin-left:10px;
-    font-family: PT Sans;
-    font-weight: bold;
-    font-size: 32px;
-    line-height: 41px;
-}
-
-.answer{
-    border: 3px solid #83CEE2;
-    box-sizing: border-box;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);    
-}
-.answer p{
-    margin:3%;
-    font-size:25px;
-} */
 
 
 .card{
     border: 3px solid #83CEE2;
 }
 
-<<<<<<< HEAD
 .card-header{
     background: #0182AC;
     border: 3px solid #83CEE2;
@@ -104,9 +76,8 @@
     font-family: Roboto;
     font-size:20px;
 }
-=======
+
 .help-icon {
     font-size: 32px;
     vertical-align: sub;
 }
->>>>>>> 871916b6c6d611ace6bd5cedd6fbccce945b842e
