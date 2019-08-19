@@ -1,12 +1,10 @@
-.hero {
-
+#domains-faqs {
     background: linear-gradient(231.04deg, #182E69 8.35%, rgba(8, 67, 125, 0.805815) 53.05%, rgba(0, 88, 143, 0.550592) 84.58%, rgba(0, 109, 158, 0.389124) 93.35%, rgba(1, 130, 172, 0) 99.45%),
     linear-gradient(128.99deg, #182E69 8.4%, rgba(8, 67, 125, 0.805815) 53.34%, rgba(0, 88, 143, 0.550592) 85.05%, rgba(0, 109, 158, 0.389124) 99.99%, rgba(1, 130, 172, 0) 100%);
     mix-blend-mode: soft-light;
     border: 1px solid #000000;
     box-sizing: border-box;
     color: white;
-    padding: 80px;
 }
 
 #heading-domains{
