@@ -17,6 +17,19 @@ body {
 	overflow-x: hidden;
 }
 
+
+button {
+    cursor: pointer;
+}
+
+button:active {
+    transform: translateY(2px);
+}
+
+button:focus {
+    outline: 0;
+}
+
 @media screen and (max-width: 900px) {
 	section {
 		padding: 60px 30px;
