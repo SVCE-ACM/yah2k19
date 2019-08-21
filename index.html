@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="text/javascript" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/faq.css" />
     <link rel="stylesheet" href="global.css">
     <link rel="stylesheet" type="text/css" href="agenda.css">
@@ -15,14 +16,13 @@
     <link rel="stylesheet" type="text/css" href="navbar.css">
     <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" type="text/css" href="css/contact.css" />
-
 </head>
 
 <body>
     <div id="main-container">
         <nav class="navbar navbar-expand-lg fixed-top navbar-shrink" id="mainnav">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img src="images/svce_acm_2.png" id="acmicon"></a>
+                <a class="navbar-brand" href="#hero"><img src="images/svce_acm_2.png" id="acmicon"></a>
                 <button class="navbar-toggler is-closed" type="button">
                     <i class="material-icons" id="menu-icon">menu</i>
                     <i class="material-icons hide" id="close-icon">close</i>
@@ -30,22 +30,22 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="#" id="about">About</a>
+                            <a class="nav-link" href="#about" id="about-nav">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#" id="domain">Domain</a>
+                            <a class="nav-link" href="#heading-domains" id="domains-nav">Domain</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#" id="faqs">FAQs</a>
+                            <a class="nav-link" href="#heading-faqs" id="faqs-nav">FAQs</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#" id="sponsor">Sponsors</a>
+                            <a class="nav-link" href="#sponsors" id="sponsors-nav">Sponsors</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#" id="agenda-nav">Agenda</a>
+                            <a class="nav-link" href="#agenda" id="agenda-nav">Agenda</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#" id="venue">Venue</a>
+                            <a class="nav-link" href="#contact" id="contact-nav">Contact</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link btn-nav-link" href="#"><button type="button" class="btn" id="nav-register">Register</button>
@@ -56,27 +56,28 @@
                 <div class="navbar-mob-container" id="navbarMob">
                     <ul class="navbar-mob">
                         <li class="nav-item">
-                            <a class="nav-link" href="#" id="about">About</a>
+                            <a class="nav-link" href="#about" id="about-nav">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#" id="domain">Domain</a>
+                            <a class="nav-link" href="#heading-domains" id="domains-nav">Domain</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#" id="faqs">FAQs</a>
+                            <a class="nav-link" href="#heading-faqs" id="faqs-nav">FAQs</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#" id="sponsor">Sponsors</a>
+                            <a class="nav-link" href="#sponsors" id="sponsors-nav">Sponsors</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#" id="agenda-nav">Agenda</a>
+                            <a class="nav-link" href="#agenda" id="agenda-nav">Agenda</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#" id="venue">Venue</a>
+                            <a class="nav-link" href="#contact" id="contact-nav">Contact</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link btn-nav-link" href="#"><button type="button" class="btn" id="nav-register">Register</button>
                             </a>
                         </li>
+
                     </ul>
                 </div>
             </div><!-- .container -->
@@ -94,13 +95,13 @@
                         <button class="register-btn" id="hero-register-btn">Register</button>
                     </div><!-- .btn-container -->
                     <div class="btn-container">
-                        <button id="know-more-btn">Know More <i class="material-icons" id="arrow-down">arrow_drop_down_circle</i></button>
+                        <a href="#about"><button id="know-more-btn">Know More <i class="material-icons" id="arrow-down">arrow_drop_down_circle</i></button></a>
                     </div><!-- .btn-container -->
                 </div><!-- .btn-whole-container -->
             </div>
             <img src="heroelem.svg" id="heroelem">
         </section><!-- #hero -->
-        <section class="aboutpage">
+        <section id="about">
             <div class="container">
                 <div class="text-center">
                     <img src="images/yahlogo.png">
@@ -265,36 +266,69 @@
             </div><!-- .custom-container -->
         </section>
         <section id="contact">
-        	<div class="container">
-		<br>
-		<!-- contact -->
-
-		<h1 class="text-center text1">Contact</h1>
-		<br>
-		<p class="text-center text2">Still got questions?</p>
-		<p class="text-center text2">Get in touch with us</p>
-		<div class ="row justify-content-center">	
-			<div class="p-2 text1 text3">
-				<span><img src="images/phone.svg" class="img-responsive"/>  +91 98765 43210&emsp;&emsp;</span>
-			</div> 
-			<div class="p-2 text1 text3">
-				<span><img src="images/mail.svg" class="img-responsive"/>  contact@svce.acm.org</span>
-			</div>
-
-		</div>
-		<br>
-
-		<!-- venue -->
-
-		<h1 class="text-center text1">Venue</h1>
-		<br>
-
-		<!-- google map -->
-
-		<iframe src="https://maps.google.com/maps?q=svce&t=k&z=15&ie=UTF8&iwloc=&output=embed" scrolling="no" marginheight="0" marginwidth="0">
-		
-	</div>
+            <div class="container">
+                <br>
+                <!-- contact -->
+                <h1 class="text-center text1">Contact</h1>
+                <br>
+                <p class="text-center text2">Still got questions?</p>
+                <p class="text-center text2">Get in touch with us</p>
+                <div class="row justify-content-center">
+                    <div class="p-2 text1 text3">
+                        <span><i class="fas fa-phone-square"></i> <a class="external" href="tel:+919876543210">+91 98765 43210</a></span>
+                    </div>
+                    <div class="p-2 text1 text3">
+                        <span><i class="fas fa-envelope"></i> <a class="external" href="mailto:contact@svce.acm.org">contact@svce.acm.org</a></span>
+                    </div>
+                </div>
+                <br>
+                <!-- venue -->
+                <h1 class="text-center text1">Venue</h1>
+                <br>
+                <!-- google map -->
+                <iframe src="https://maps.google.com/maps?q=svce&t=k&z=15&ie=UTF8&iwloc=&output=embed" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+            </div>
         </section><!-- #contact -->
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 h-100 text-center text-lg-left mt-4" id="icons">
+                        <!-- icons -->
+                        <ul class="list-inline mb-0">
+                            <li class="list-inline-item mr-2">
+                                <a href="https://www.facebook.com/SVCEACM/">
+                                    <i class="fab fa-facebook fa-2x fa-fw"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item mr-2">
+                                <a href="https://twitter.com/acm_svce">
+                                    <i class="fab fa-twitter-square fa-2x fa-fw"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://www.instagram.com/svceacm/">
+                                    <i class="fab fa-instagram fa-2x fa-fw"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item mr-2">
+                                <a href="https://www.youtube.com/channel/UC4TPMqj-kR7DdpNB1ndREMg">
+                                    <i class="fab fa-youtube fa-2x fa-fw"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item mr-2">
+                                <a href="https://github.com/SVCE-ACM">
+                                    <i class="fab fa-github fa-2x fa-fw"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- made by ACM -->
+                    <div class="col-md-6 h-100 text-center text-lg-right mt-4 mb-3">
+                        <p class="text">Made by SVCE ACM Web Team</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div><!-- #main-container -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
