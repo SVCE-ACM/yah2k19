@@ -6,17 +6,6 @@
     color: white;
 }
 
-button {
-    cursor: pointer;
-}
-
-button:active {
-    transform: translateY(2px);
-}
-
-button:focus {
-    outline: 0;
-}
 
 #container-logo {
     display: flex;
@@ -77,6 +66,6 @@ button:focus {
     position: absolute;
     left: 0;
     bottom: 0;
-    width: 100vw;
+    width: 100%;
     z-index: -999;
 }

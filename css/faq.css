@@ -1,20 +1,18 @@
-.hero {
-
+#domains-faqs {
     background: linear-gradient(231.04deg, #182E69 8.35%, rgba(8, 67, 125, 0.805815) 53.05%, rgba(0, 88, 143, 0.550592) 84.58%, rgba(0, 109, 158, 0.389124) 93.35%, rgba(1, 130, 172, 0) 99.45%),
     linear-gradient(128.99deg, #182E69 8.4%, rgba(8, 67, 125, 0.805815) 53.34%, rgba(0, 88, 143, 0.550592) 85.05%, rgba(0, 109, 158, 0.389124) 99.99%, rgba(1, 130, 172, 0) 100%);
     mix-blend-mode: soft-light;
     border: 1px solid #000000;
     box-sizing: border-box;
     color: white;
-
 }
 
-.domains{
-    font-family: Poppins;
-    font-weight:1000;
-    font-size:40px;
-    margin-top:5%;
-    margin-bottom:4%;
+#heading-domains{
+    margin-bottom: 32px;
+}
+
+#heading-faqs {
+    margin: 32px auto;
 }
 
 .box-container {
@@ -43,7 +41,8 @@
 
 
 .card{
-    border: 3px solid #83CEE2;
+    background: transparent;
+    margin-bottom: 8px;
 }
 
 .card-header{
@@ -51,7 +50,7 @@
     border: 3px solid #83CEE2;
     box-sizing: border-box;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 10px 10px 0px 0px;
+    border-radius: 0 ;
 }
 
 .btn-accordion{
@@ -61,13 +60,12 @@
     font-family:PT Sans;
     font-weight:bold;
     font-size:30px;
+    width: 100%;
+    text-align: left;
 }
 
 .btn-accordion img{
     padding:2%;
-}
-.collapse{
-    background: linear-gradient(243.32deg, #182E69 8.35%, rgba(8, 67, 125, 0.805815) 53.05%, rgba(0, 88, 143, 0.550592) 84.58%, rgba(0, 109, 158, 0.389124) 93.35%, rgba(1, 130, 172, 0) 99.45%);
 }
 
 .card-body{
@@ -75,6 +73,9 @@
     padding-right:5%;
     font-family: Roboto;
     font-size:20px;
+    border: 3px solid #83CEE2;
+    border-radius: 0 0 10px 10px;
+    border-top: none;
 }
 
 .help-icon {

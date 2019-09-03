@@ -7,19 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="icon" type="image/png" href="images/yahlogo.png">
     <script src="jquery-3.4.1.min.js"></script>
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Poppins|Roboto|PT+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="icon" type="image/png" href="images/yahlogo.png">
     <link rel="stylesheet" type="text/css" href="css/faq.css" />
+    <link rel="stylesheet" href="global.css">
 </head>
 
 <body>
-    <div class="hero">
+    <section id="domains-faqs">
         <div class="container">
-            <div class="domains text-center">
-                <p>Domains</p>
-            </div>
+            <h1 class="section-heading" id="heading-domains">Domains</h1>
             <div class="row">
                 <div class="box-container col-lg-4 col-md-6">
                     <div class="box">
@@ -47,6 +47,7 @@
                     </div>
                 </div><!-- .col-lg-4 -->
             </div>
+<<<<<<< HEAD
             <div class="faqs text-center">
                 <p>FAQs</p>
             </div>
@@ -334,16 +335,62 @@
                     </div>
                 </div>
 
+=======
+            <h1 class="section-heading" id="heading-faqs">FAQs</h1>
+            <div id="accordion">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h5 class="mb-0">
+                            <button class="btn-accordion" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <i class="material-icons help-icon">help</i> Are GRE and CGPA equally important?
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                            No, they are not. Your CGPA is a defining factor of your 4 years of college. While some universities do place a priority on the GRE, the vast majority focus on your CGPA. Note that this does not mean you should disregard the GRE entirely, it is still a priority, just not the primary one.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header round-border" id="headingTwo">
+                        <h5 class="mb-0">
+                            <button class="btn-accordion" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseOne">
+                                <i class="material-icons help-icon">help</i> Are GRE and CGPA equally important?
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                        <div class="card-body">
+                            No, they are not. Your CGPA is a defining factor of your 4 years of college. While some universities do place a priority on the GRE, the vast majority focus on your CGPA. Note that this does not mean you should disregard the GRE entirely, it is still a priority, just not the primary one.
+                        </div>
+                    </div>
+>>>>>>> a95bda91d4b3a72d09693162683ba59cf41dffac
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 </body>
 <script>
+<<<<<<< HEAD
     
+=======
+>>>>>>> a95bda91d4b3a72d09693162683ba59cf41dffac
 </script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
+<script>
+    /*function changeBorder() {
+        $('.collapse').prev().css({'border-radius': '10px'});
+        $('.collapse.show').prev().css({'border-radius': '10px 10px 0 0'});
+    }
+    $(document).ready(function() {
+        changeBorder();
+        $('.btn-accordion').click(function() {
+            console.log("Clicked");
+            changeBorder();
+        });
+    });*/
+</script>
 </html>
