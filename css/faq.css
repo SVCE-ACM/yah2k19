@@ -59,7 +59,7 @@
     color:white;
     font-family:PT Sans;
     font-weight:bold;
-    font-size:30px;
+    font-size:28px;
     width: 100%;
     text-align: left;
 }
@@ -79,6 +79,6 @@
 }
 
 .help-icon {
-    font-size: 32px;
+    font-size: 28px;
     vertical-align: sub;
 }
