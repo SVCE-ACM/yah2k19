@@ -1,0 +1,69 @@
+#hero {
+	background: linear-gradient(231.04deg, #182E69 8.35%, rgba(8, 67, 125, 0.805815) 53.05%, rgba(0, 88, 143, 0.550592) 84.58%, rgba(0, 109, 158, 0.389124) 93.35%, rgba(1, 130, 172, 0) 99.45%),
+	linear-gradient(128.99deg, #182E69 8.4%, rgba(8, 67, 125, 0.805815) 53.34%, rgba(0, 88, 143, 0.550592) 85.05%, rgba(0, 109, 158, 0.389124) 99.99%, rgba(1, 130, 172, 0) 100%);
+	min-height: 100%;
+	color: white;
+	padding-top: 100px;
+}
+
+#inner-container {
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	background: rgba(24,46,105,0.85);
+	mix-blend-mode: normal;
+	border-radius: 15px;
+	max-width: 900px;
+	padding: 32px;
+	box-sizing: border-box;
+	margin-top: 56px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+	min-height: 600px    
+}
+
+#logo-container {
+	display: flex;
+	justify-content: center;
+}
+
+.form-instructions {
+	font-family: PT Sans;
+	font-weight: bold;
+	font-size: 36px;
+}
+.tab {
+	display: none;
+	flex-direction: column;
+	max-width: 550px;
+	margin: 0 auto;
+}
+
+#tab-0 {
+	display: flex;
+}
+
+.btn-container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.btn-container button {
+    background: transparent;
+    border-radius: 5px;
+    font-size: 24px;
+    min-height: 58px;
+    font-family: "PT Sans";
+    color: white;
+}
+.btn-container button.next {
+	width: 150px;
+    border: 2px solid #83CEE2;
+    font-weight: bold;
+}
+.btn-container button.back {
+    border: none;
+}
+
+.material-icons.arrow-back {
+	font-size: 16px;
+}

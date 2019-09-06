@@ -1,0 +1,239 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Poppins|Roboto|PT+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="text/javascript" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" type="text/css" href="navbar.css">
+    <link rel="stylesheet" href="register.css">
+</head>
+
+<body>
+    <div id="main-container">
+        <nav class="navbar navbar-expand-lg fixed-top navbar-shrink" id="mainnav">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#hero"><img src="images/svce_acm_2.png" id="acmicon"></a>
+                <button class="navbar-toggler is-closed" type="button">
+                    <i class="material-icons" id="menu-icon">menu</i>
+                    <i class="material-icons hide" id="close-icon">close</i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#about" id="about-nav">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#heading-domains" id="domains-nav">Domain</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#heading-faqs" id="faqs-nav">FAQs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#sponsors" id="sponsors-nav">Sponsors</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#agenda" id="agenda-nav">Agenda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#contact" id="contact-nav">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn-nav-link" href="#"><button type="button" class="btn" id="nav-register">Register</button>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar-mob-container" id="navbarMob">
+                    <ul class="navbar-mob">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#about" id="about-nav">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#heading-domains" id="domains-nav">Domain</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#heading-faqs" id="faqs-nav">FAQs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#sponsors" id="sponsors-nav">Sponsors</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#agenda" id="agenda-nav">Agenda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#contact" id="contact-nav">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn-nav-link" href="#"><button type="button" class="btn" id="nav-register">Register</button>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div><!-- .container -->
+        </nav>
+        <section id="hero">
+            <div class="container">
+                <h1 class="section-heading" id="heading-register">Register</h1>
+                <div id="inner-container">
+                    <div id="logo-container">
+                        <img id="logo-img" src="images/yahlogo.png" align="center" alt="Img not found" />
+                    </div>
+                    <form id="form-container" method="POST" action="insertTeam.php">
+                        <div class="tab" id="tab-0">
+                            <h2 class="form-instructions text-center">Enter your team details</h2><!-- .form-instructions -->
+                            <div class="form-group">
+                                <label for="team_name">Team Name</label>
+                                <input type="text" class="form-control" id="team_name" name="team_name" placeholder="Your team name">
+                            </div>
+                            <div class="form-group">
+                                <label for="num_participant">No. of team members</label>
+                                <select name="participant_count" id="num_participant" class="form-control">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                </select>
+                            </div>
+                            <div class="btn-container">
+                                <button class="next">Next <i class="material-icons" style="vertical-align: sub;">navigate_next</i></button>
+                            </div><!-- .btn-container -->
+                        </div><!-- .tab -->
+                        <div class="tab" id="tab-1">
+                            <h2 class="form-instructions text-center">Enter team leader's details</h2><!-- .form-instructions -->
+                            <div class="form-group">
+                                <label for="name_0">Name</label>
+                                <input type="text" class="form-control" id="name_0" name="name_0" placeholder="Full Name">
+                            </div><!-- .form-group -->
+                            <div class="form-group">
+                                <label for="college_0">College</label>
+                                <input type="text" class="form-control" id="college_0" name="college_0" placeholder="College Name">
+                            </div><!-- .form-group -->
+                            <div class="form-group">
+                                <label for="email_0">Email</label>
+                                <input type="email" class="form-control" id="email_0" name="email_0" placeholder="Email Address">
+                            </div><!-- .form-group -->
+                            <div class="form-group">
+                                <label for="phone_0">Phone</label>
+                                <input type="text" class="form-control" id="phone_0" name="phone_0" placeholder="Phone Number">
+                            </div><!-- .form-group -->
+                            <div class="form-group">
+                                <label for="github_url_0">Github Profile URL</label>
+                                <input type="url" class="form-control" id="github_url_0" name="github_url_0" placeholder="Github Profile URL">
+                            </div><!-- .form-group -->
+                            <div class="btn-container">
+                                <button class="back"><i class="material-icons arrow-back">arrow_back_ios</i> Back</button>
+                                <button class="next">Next <i class="material-icons" style="vertical-align: sub;">navigate_next</i></button>
+                            </div><!-- .btn-container -->
+                        </div><!-- #tab-1.tab -->
+                        <div class="tab" id="tab-2">
+                            <h2 class="form-instructions text-center">Enter 2<span class="super">nd</span> participant's details</h2><!-- .form-instructions -->
+                            <div class="form-group">
+                                <label for="name_1">Name</label>
+                                <input type="text" class="form-control" id="name_1" name="name_1" placeholder="Full Name">
+                            </div><!-- .form-group -->
+                            <div class="form-group">
+                                <label for="college_1">College</label>
+                                <input type="text" class="form-control" id="college_1" name="college_1" placeholder="College Name">
+                            </div><!-- .form-group -->
+                            <div class="form-group">
+                                <label for="email_1">Email</label>
+                                <input type="email" class="form-control" id="email_1" name="email_1" placeholder="Email Address">
+                            </div><!-- .form-group -->
+                            <div class="form-group">
+                                <label for="phone_1">Phone</label>
+                                <input type="text" class="form-control" id="phone_1" name="phone_1" placeholder="Phone Number">
+                            </div><!-- .form-group -->
+                            <div class="form-group">
+                                <label for="github_url_1">Github Profile URL</label>
+                                <input type="url" class="form-control" id="github_url_1" name="github_url_1" placeholder="Github Profile URL">
+                            </div><!-- .form-group -->
+                            <div class="btn-container">
+                                <button class="back"><i class="material-icons arrow-back">arrow_back_ios</i> Back</button>
+                                <button class="next">Next <i class="material-icons" style="vertical-align: sub;">navigate_next</i></button>
+                            </div><!-- .btn-container -->
+                        </div><!-- #tab-2.tab -->
+                        <div class="tab" id="tab-3">
+                            <h2 class="form-instructions text-center">Enter 3<span class="super">rd</span> participant's details</h2><!-- .form-instructions -->
+                            <div class="form-group">
+                                <label for="name_2">Name</label>
+                                <input type="text" class="form-control" id="name_2" name="name_2" placeholder="Full Name">
+                            </div><!-- .form-group -->
+                            <div class="form-group">
+                                <label for="college_2">College</label>
+                                <input type="text" class="form-control" id="college_2" name="college_2" placeholder="College Name">
+                            </div><!-- .form-group -->
+                            <div class="form-group">
+                                <label for="email_2">Email</label>
+                                <input type="email" class="form-control" id="email_2" name="email_2" placeholder="Email Address">
+                            </div><!-- .form-group -->
+                            <div class="form-group">
+                                <label for="phone_2">Phone</label>
+                                <input type="text" class="form-control" id="phone_2" name="phone_2" placeholder="Phone Number">
+                            </div><!-- .form-group -->
+                            <div class="form-group">
+                                <label for="github_url_2">Github Profile URL</label>
+                                <input type="url" class="form-control" id="github_url_2" name="github_url_2" placeholder="Github Profile URL">
+                            </div><!-- .form-group -->
+                            <div class="btn-container">
+                                <button class="back"><i class="material-icons arrow-back">arrow_back_ios</i> Back</button>
+                                <button class="next">Next <i class="material-icons" style="vertical-align: sub;">navigate_next</i></button>
+                            </div><!-- .btn-container -->
+                        </div><!-- #tab-3.tab -->
+                        <div class="tab" id="tab-4">
+                            <h2 class="form-instructions text-center">Enter 4<span class="super">th</span> participant's details</h2><!-- .form-instructions -->
+                            <div class="form-group">
+                                <label for="name_3">Name</label>
+                                <input type="text" class="form-control" id="name_3" name="name_3" placeholder="Full Name">
+                            </div><!-- .form-group -->
+                            <div class="form-group">
+                                <label for="college_3">College</label>
+                                <input type="text" class="form-control" id="college_3" name="college_3" placeholder="College Name">
+                            </div><!-- .form-group -->
+                            <div class="form-group">
+                                <label for="email_3">Email</label>
+                                <input type="email" class="form-control" id="email_3" name="email_3" placeholder="Email Address">
+                            </div><!-- .form-group -->
+                            <div class="form-group">
+                                <label for="phone_3">Phone</label>
+                                <input type="text" class="form-control" id="phone_3" name="phone_3" placeholder="Phone Number">
+                            </div><!-- .form-group -->
+                            <div class="form-group">
+                                <label for="github_url_3">Github Profile URL</label>
+                                <input type="url" class="form-control" id="github_url_3" name="github_url_3" placeholder="Github Profile URL">
+                            </div><!-- .form-group -->
+                            <div class="btn-container">
+                                <button class="back"><i class="material-icons arrow-back">arrow_back_ios</i> Back</button>
+                                <button class="next">Next <i class="material-icons" style="vertical-align: sub;">navigate_next</i></button>
+                            </div><!-- .btn-container -->
+                        </div><!-- #tab-4.tab -->
+                        <div class="tab" id="tab-5">
+                            <h2 class="form-instructions text-center">Submit your abstract</h2><!-- .form-instructions text-center -->
+                            <div class="form-group">
+                                <label for="domain">Domain</label>
+                                <input type="text" class="form-control" id="domain_form" name="domain" placeholder="Your domain">
+                            </div><!-- .form-group -->
+                            <div class="form-group">
+                                <label for="abstract">Abstract</label>
+                                <textarea class="form-control" id="abstract" name="abstract" rows="10" placeholder="Enter your abstract (Character limit: 1500)" maxlength="1500"></textarea>
+                            </div><!-- .form-group -->
+                            <div class="btn-container">
+                                <button class="back"><i class="material-icons arrow-back">arrow_back_ios</i> Back</button>
+                                <button class="next" type="submit">Submit</button>
+                            </div><!-- .btn-container -->
+                        </div><!-- #tab-5.tab -->
+                    </form>
+                </div><!-- #inner-container -->
+            </div><!-- .container -->
+        </section><!-- #hero -->
+    </div><!-- #main-container -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="register.js"></script>
+</body>
+
+</html>
