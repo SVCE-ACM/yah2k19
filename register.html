@@ -9,9 +9,19 @@
     <link rel="text/javascript" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-    <link rel="stylesheet" href="global.css">
-    <link rel="stylesheet" type="text/css" href="navbar.css">
-    <link rel="stylesheet" href="register.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" type="text/css" href="css/navbar.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/register.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138009901-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-138009901-2');
+    </script>
 </head>
 
 <body>
@@ -82,14 +92,14 @@
                 <h1 class="section-heading" id="heading-register">Register</h1>
                 <div id="inner-container">
                     <div id="logo-container">
-                        <img id="logo-img" src="images/yahlogo.png" align="center" alt="Img not found" />
+                        <img class="logo" id="logo-img" src="images/yahlogo.png" align="center" alt="Img not found" />
                     </div>
                     <form id="form-container" method="POST" action="insertTeam.php">
                         <div class="tab" id="tab-0">
                             <h2 class="form-instructions text-center">Enter your team details</h2><!-- .form-instructions -->
                             <div class="form-group">
                                 <label for="team_name">Team Name</label>
-                                <input type="text" class="form-control" id="team_name" name="team_name" placeholder="Your team name">
+                                <input type="text" class="form-control" id="team_name" name="team_name" placeholder="Your team name" required>
                             </div>
                             <div class="form-group">
                                 <label for="num_participant">No. of team members</label>
@@ -108,23 +118,23 @@
                             <h2 class="form-instructions text-center">Enter team leader's details</h2><!-- .form-instructions -->
                             <div class="form-group">
                                 <label for="name_0">Name</label>
-                                <input type="text" class="form-control" id="name_0" name="name_0" placeholder="Full Name">
+                                <input type="text" class="form-control" id="name_0" name="name_0" placeholder="Full Name" required>
                             </div><!-- .form-group -->
                             <div class="form-group">
                                 <label for="college_0">College</label>
-                                <input type="text" class="form-control" id="college_0" name="college_0" placeholder="College Name">
+                                <input type="text" class="form-control" id="college_0" name="college_0" placeholder="College Name" required>
                             </div><!-- .form-group -->
                             <div class="form-group">
                                 <label for="email_0">Email</label>
-                                <input type="email" class="form-control" id="email_0" name="email_0" placeholder="Email Address">
+                                <input type="email" class="form-control" id="email_0" name="email_0" placeholder="Email Address" required>
                             </div><!-- .form-group -->
                             <div class="form-group">
                                 <label for="phone_0">Phone</label>
-                                <input type="text" class="form-control" id="phone_0" name="phone_0" placeholder="Phone Number">
+                                <input type="text" class="form-control" id="phone_0" name="phone_0" placeholder="Phone Number" required>
                             </div><!-- .form-group -->
                             <div class="form-group">
                                 <label for="github_url_0">Github Profile URL</label>
-                                <input type="url" class="form-control" id="github_url_0" name="github_url_0" placeholder="Github Profile URL">
+                                <input type="url" class="form-control" id="github_url_0" name="github_url_0" placeholder="Github Profile URL" required>
                             </div><!-- .form-group -->
                             <div class="btn-container">
                                 <button class="back"><i class="material-icons arrow-back">arrow_back_ios</i> Back</button>
@@ -135,23 +145,23 @@
                             <h2 class="form-instructions text-center">Enter 2<span class="super">nd</span> participant's details</h2><!-- .form-instructions -->
                             <div class="form-group">
                                 <label for="name_1">Name</label>
-                                <input type="text" class="form-control" id="name_1" name="name_1" placeholder="Full Name">
+                                <input type="text" class="form-control" id="name_1" name="name_1" placeholder="Full Name" required>
                             </div><!-- .form-group -->
                             <div class="form-group">
                                 <label for="college_1">College</label>
-                                <input type="text" class="form-control" id="college_1" name="college_1" placeholder="College Name">
+                                <input type="text" class="form-control" id="college_1" name="college_1" placeholder="College Name" required>
                             </div><!-- .form-group -->
                             <div class="form-group">
                                 <label for="email_1">Email</label>
-                                <input type="email" class="form-control" id="email_1" name="email_1" placeholder="Email Address">
+                                <input type="email" class="form-control" id="email_1" name="email_1" placeholder="Email Address" required>
                             </div><!-- .form-group -->
                             <div class="form-group">
                                 <label for="phone_1">Phone</label>
-                                <input type="text" class="form-control" id="phone_1" name="phone_1" placeholder="Phone Number">
+                                <input type="text" class="form-control" id="phone_1" name="phone_1" placeholder="Phone Number" required>
                             </div><!-- .form-group -->
                             <div class="form-group">
                                 <label for="github_url_1">Github Profile URL</label>
-                                <input type="url" class="form-control" id="github_url_1" name="github_url_1" placeholder="Github Profile URL">
+                                <input type="url" class="form-control" id="github_url_1" name="github_url_1" placeholder="Github Profile URL" required>
                             </div><!-- .form-group -->
                             <div class="btn-container">
                                 <button class="back"><i class="material-icons arrow-back">arrow_back_ios</i> Back</button>
@@ -162,23 +172,23 @@
                             <h2 class="form-instructions text-center">Enter 3<span class="super">rd</span> participant's details</h2><!-- .form-instructions -->
                             <div class="form-group">
                                 <label for="name_2">Name</label>
-                                <input type="text" class="form-control" id="name_2" name="name_2" placeholder="Full Name">
+                                <input type="text" class="form-control" id="name_2" name="name_2" placeholder="Full Name" required>
                             </div><!-- .form-group -->
                             <div class="form-group">
                                 <label for="college_2">College</label>
-                                <input type="text" class="form-control" id="college_2" name="college_2" placeholder="College Name">
+                                <input type="text" class="form-control" id="college_2" name="college_2" placeholder="College Name" required>
                             </div><!-- .form-group -->
                             <div class="form-group">
                                 <label for="email_2">Email</label>
-                                <input type="email" class="form-control" id="email_2" name="email_2" placeholder="Email Address">
+                                <input type="email" class="form-control" id="email_2" name="email_2" placeholder="Email Address" required>
                             </div><!-- .form-group -->
                             <div class="form-group">
                                 <label for="phone_2">Phone</label>
-                                <input type="text" class="form-control" id="phone_2" name="phone_2" placeholder="Phone Number">
+                                <input type="text" class="form-control" id="phone_2" name="phone_2" placeholder="Phone Number" required>
                             </div><!-- .form-group -->
                             <div class="form-group">
                                 <label for="github_url_2">Github Profile URL</label>
-                                <input type="url" class="form-control" id="github_url_2" name="github_url_2" placeholder="Github Profile URL">
+                                <input type="url" class="form-control" id="github_url_2" name="github_url_2" placeholder="Github Profile URL" required>
                             </div><!-- .form-group -->
                             <div class="btn-container">
                                 <button class="back"><i class="material-icons arrow-back">arrow_back_ios</i> Back</button>
@@ -189,23 +199,23 @@
                             <h2 class="form-instructions text-center">Enter 4<span class="super">th</span> participant's details</h2><!-- .form-instructions -->
                             <div class="form-group">
                                 <label for="name_3">Name</label>
-                                <input type="text" class="form-control" id="name_3" name="name_3" placeholder="Full Name">
+                                <input type="text" class="form-control" id="name_3" name="name_3" placeholder="Full Name" required>
                             </div><!-- .form-group -->
                             <div class="form-group">
                                 <label for="college_3">College</label>
-                                <input type="text" class="form-control" id="college_3" name="college_3" placeholder="College Name">
+                                <input type="text" class="form-control" id="college_3" name="college_3" placeholder="College Name" required>
                             </div><!-- .form-group -->
                             <div class="form-group">
                                 <label for="email_3">Email</label>
-                                <input type="email" class="form-control" id="email_3" name="email_3" placeholder="Email Address">
+                                <input type="email" class="form-control" id="email_3" name="email_3" placeholder="Email Address" required>
                             </div><!-- .form-group -->
                             <div class="form-group">
                                 <label for="phone_3">Phone</label>
-                                <input type="text" class="form-control" id="phone_3" name="phone_3" placeholder="Phone Number">
+                                <input type="text" class="form-control" id="phone_3" name="phone_3" placeholder="Phone Number" required>
                             </div><!-- .form-group -->
                             <div class="form-group">
                                 <label for="github_url_3">Github Profile URL</label>
-                                <input type="url" class="form-control" id="github_url_3" name="github_url_3" placeholder="Github Profile URL">
+                                <input type="url" class="form-control" id="github_url_3" name="github_url_3" placeholder="Github Profile URL" required>
                             </div><!-- .form-group -->
                             <div class="btn-container">
                                 <button class="back"><i class="material-icons arrow-back">arrow_back_ios</i> Back</button>
@@ -216,11 +226,11 @@
                             <h2 class="form-instructions text-center">Submit your abstract</h2><!-- .form-instructions text-center -->
                             <div class="form-group">
                                 <label for="domain">Domain</label>
-                                <input type="text" class="form-control" id="domain_form" name="domain" placeholder="Your domain">
+                                <input type="text" class="form-control" id="domain_form" name="domain" placeholder="Your domain" required>
                             </div><!-- .form-group -->
                             <div class="form-group">
                                 <label for="abstract">Abstract</label>
-                                <textarea class="form-control" id="abstract" name="abstract" rows="10" placeholder="Enter your abstract (Character limit: 1500)" maxlength="1500"></textarea>
+                                <textarea class="form-control" id="abstract" name="abstract" rows="10" placeholder="Enter your abstract (Character limit: 1500)" maxlength="1500" required></textarea>
                             </div><!-- .form-group -->
                             <div class="btn-container">
                                 <button class="back"><i class="material-icons arrow-back">arrow_back_ios</i> Back</button>
@@ -231,6 +241,46 @@
                 </div><!-- #inner-container -->
             </div><!-- .container -->
         </section><!-- #hero -->
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 h-100 text-center text-lg-left mt-4" id="icons">
+                        <!-- icons -->
+                        <ul class="list-inline mb-0">
+                            <li class="list-inline-item mr-2">
+                                <a href="https://www.facebook.com/SVCEACM/">
+                                    <i class="fab fa-facebook fa-2x fa-fw"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item mr-2">
+                                <a href="https://twitter.com/acm_svce">
+                                    <i class="fab fa-twitter-square fa-2x fa-fw"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://www.instagram.com/svceacm/">
+                                    <i class="fab fa-instagram fa-2x fa-fw"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item mr-2">
+                                <a href="https://www.youtube.com/channel/UC4TPMqj-kR7DdpNB1ndREMg">
+                                    <i class="fab fa-youtube fa-2x fa-fw"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item mr-2">
+                                <a href="https://github.com/SVCE-ACM">
+                                    <i class="fab fa-github fa-2x fa-fw"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- made by ACM -->
+                    <div class="col-md-6 h-100 text-center text-lg-right mt-4 mb-3">
+                        <p class="text">Made by SVCE ACM Web Team</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div><!-- #main-container -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script>

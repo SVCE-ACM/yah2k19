@@ -2,20 +2,28 @@
 <html>
 
 <head>
-    <title>Agenda</title>
+    <title>YAH! 2k19</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Poppins|Roboto|PT+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="text/javascript" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/faq.css" />
-    <link rel="stylesheet" href="global.css">
-    <link rel="stylesheet" type="text/css" href="agenda.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" type="text/css" href="css/agenda.css">
     <link rel="stylesheet" type="text/css" href="css/yah_index.css" />
-    <link rel="stylesheet" type="text/css" href="navbar.css">
+    <link rel="stylesheet" type="text/css" href="css/navbar.css">
     <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" type="text/css" href="css/contact.css" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138009901-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-138009901-2');
+    </script>
 </head>
 
 <body>
@@ -85,7 +93,7 @@
             <div id="container">
                 <!-- container for logo -->
                 <div id="container-logo">
-                    <img id="logo-img" src="images/yahlogo.png" align="center" alt="Img not found" />
+                    <img class="logo" id="logo-img" src="images/yahlogo.png" align="center" alt="Img not found" />
                 </div>
                 <p id="text1" class="text text-center">Yet Another Hackathon! 2k19</p>
                 <p id="text2" class="text text-center">September 21-22, 2019 | Cove @ Kotturpuram</p>
@@ -98,16 +106,14 @@
                     </div><!-- .btn-container -->
                 </div><!-- .btn-whole-container -->
             </div>
-            <img src="heroelem.svg" id="heroelem">
+            <img src="images/heroelem.svg" id="heroelem">
         </section><!-- #hero -->
         <section id="about">
             <div class="container">
                 <div class="text-center">
-                    <img src="images/yahlogo.png">
+                    <img class="logo" src="images/yahlogo.png">
                 </div>
-                <br>
                 <p class="text-center aboutheading">About YAH! 2k19</p>
-                <br>
                 <p class="text-justify aboutcontent">
                     Yet Another Hackathon! (YAH!) is a 24 hour hackathon where the brightest minds and innovative souls come together to create solutions to real problems. Held at Cove, Kotturpuram and conducted by the SVCE ACM Student Chapter, this year we aim to be bigger and better than ever.
                 </p>
@@ -387,7 +393,18 @@
             </div>
         </section>
         <section id="sponsors" style="height: 100vh;">
-            <h1 class="section-heading" id="heading-sponsors">Our Sponsors</h1>
+            <h1 class="section-heading" id="heading-sponsors">Sponsors</h1>
+            <!-- <div class="container">
+                <p class="text-center aboutheading">Interested in sponsoring the hackathon?</p>
+                <br>
+                <p class="text-justify aboutcontent">
+                    Contact us at <a href="mailto:sponsors@svce.acm.org">sponsors@svce.acm.org</a>
+                </p>
+                <br>
+                <div class="text-center">
+                    <img src="images/hype.png" class="img-fluid abouthype">
+                </div>
+            </div>.container -->
         </section><!-- #sponsors -->
         <!-- <section id="agenda">
             <div class="custom-container">
@@ -532,7 +549,6 @@
         </footer>
     </div><!-- #main-container -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script>
     $('.navbar-toggler').click(function() {

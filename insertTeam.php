@@ -1,8 +1,6 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "svcehost_yah";
+
+require 'db_pass.php';
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
