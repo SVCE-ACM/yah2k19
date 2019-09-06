@@ -67,3 +67,9 @@
 .material-icons.arrow-back {
 	font-size: 16px;
 }
+
+@media screen and (max-width: 992px) {
+	.form-instructions {
+		font-size: 28px;
+	}	
+}

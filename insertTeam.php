@@ -45,4 +45,5 @@ $abstracts_stmt->bind_param("sss", $_POST['team_name'], $_POST['domain'], $_POST
 $abstracts_stmt->execute();
 
 $conn->close();
+header('Location: confirmation.html');
 ?>

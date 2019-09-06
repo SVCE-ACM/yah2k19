@@ -18,7 +18,7 @@
     <div id="main-container">
         <nav class="navbar navbar-expand-lg fixed-top navbar-shrink" id="mainnav">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#hero"><img src="images/svce_acm_2.png" id="acmicon"></a>
+                <a class="navbar-brand" href="index.html"><img src="images/svce_acm_2.png" id="acmicon"></a>
                 <button class="navbar-toggler is-closed" type="button">
                     <i class="material-icons" id="menu-icon">menu</i>
                     <i class="material-icons hide" id="close-icon">close</i>
@@ -37,9 +37,9 @@
                         <li class="nav-item">
                             <a class="nav-link" href="index.html#sponsors" id="sponsors-nav">Sponsors</a>
                         </li>
-                        <li class="nav-item">
+                        <!-- <li class="nav-item">
                             <a class="nav-link" href="index.html#agenda" id="agenda-nav">Agenda</a>
-                        </li>
+                        </li> -->
                         <li class="nav-item">
                             <a class="nav-link" href="index.html#contact" id="contact-nav">Contact</a>
                         </li>
@@ -63,9 +63,9 @@
                         <li class="nav-item">
                             <a class="nav-link" href="index.html#sponsors" id="sponsors-nav">Sponsors</a>
                         </li>
-                        <li class="nav-item">
+                        <!-- <li class="nav-item">
                             <a class="nav-link" href="index.html#agenda" id="agenda-nav">Agenda</a>
-                        </li>
+                        </li> -->
                         <li class="nav-item">
                             <a class="nav-link" href="index.html#contact" id="contact-nav">Contact</a>
                         </li>
@@ -233,6 +233,29 @@
         </section><!-- #hero -->
     </div><!-- #main-container -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script>
+        $('.navbar-toggler').click(function() {
+        if ($(this).hasClass('is-closed')) {
+            $('#main-container').css({
+                'left': '-50%'
+            });
+            $('#mainnav').css({
+                'left': '-50%'
+            });
+        } else if ($(this).hasClass('is-open')) {
+            $('#main-container').css({
+                'left': ''
+            });
+            $('#mainnav').css({
+                'left': ''
+            });
+        }
+        $('.navbar-mob-container').toggleClass('show');
+        $(this).toggleClass('is-closed');
+        $(this).toggleClass('is-open');
+        $('#menu-icon, #close-icon').toggleClass('hide');
+    });
+    </script>
     <script src="register.js"></script>
 </body>
 
