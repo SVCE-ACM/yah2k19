@@ -1,0 +1,23 @@
+.sponsor-logo-container {
+	display: flex;
+	justify-content: center;
+}
+
+.sponsor-logo-container img {
+	max-height: 200px;
+	max-width: 100%;
+}
+
+#sponsor-q {
+	margin-top: 60px;
+}
+
+#sponsor-contact {
+	font-size: 32px;
+	font-family: Poppins;
+	text-align: center;
+}
+
+#sponsors {
+	padding-bottom: 0;
+}
