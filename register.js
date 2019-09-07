@@ -1,5 +1,3 @@
-// Validation to be done 
-
 var participant_count;
 $('#tab-0 .next').click(function (event) {
 	event.preventDefault();
@@ -84,11 +82,14 @@ $('#tab-5 .next').click(function (event) {
 			return;
 		}
 	}
+	if ($('#domain').val() === "") {
+		document.forms['form-container'].reportValidity();
+		return;	
+	}
 	if (!document.getElementById('abstract').checkValidity()) {
 		document.forms['form-container'].reportValidity();
 		return;
 	}
-	// Do validation
 	$('form').submit();
 })
 
@@ -129,18 +130,3 @@ $('#tab-5 .back').click(function(event) {
 		$('#tab-1').css('display', 'flex');
 	}
 });
-
-function validateEmail(email) {
-    var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    return re.test(String(email).toLowerCase());
-}
-
-function validateURL(url) {
-  var pattern = new RegExp('^(https?:\\/\\/)?'+ // protocol
-    '((([a-z\\d]([a-z\\d-]*[a-z\\d])*)\\.)+[a-z]{2,}|'+ // domain name
-    '((\\d{1,3}\\.){3}\\d{1,3}))'+ // OR ip (v4) address
-    '(\\:\\d+)?(\\/[-a-z\\d%_.~+]*)*'+ // port and path
-    '(\\?[;&a-z\\d%_.~+=-]*)?'+ // query string
-    '(\\#[-a-z\\d_]*)?$','i'); // fragment locator
-  return !!pattern.test(url);
-}
