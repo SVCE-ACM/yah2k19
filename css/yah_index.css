@@ -23,6 +23,11 @@
     font-size: 36px;
 }
 
+#text3 {
+    font-family: Poppins;
+    font-size: 24px;
+}
+
 #btn-whole-container {
     margin-top: 56px;
 }
@@ -49,7 +54,7 @@
 }
 
 #know-more-btn {
-    margin-top: 32px;
+    /*margin-top: 32px;*/
     background: transparent;
     border: 2px solid #83CEE2;
     border-radius: 5px;
