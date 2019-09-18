@@ -31,31 +31,50 @@ def sendmail(msg):
     except:
         print("failed to send mail")
 
-sample_email = 'shriramgobu@gmail.com'
+sample_email = 'sudharsanj286@gmail.com'
 name='Shriram'
 Contentesh=''
 msg=EmailMessage()
 msg['Subject']='svce acm'
 msg['From']=email_id
-msg['To']= 'shriramgobu@gmail.com'
+msg['To']= 'sudharsanj286@gmail.com'
 msg.add_alternative("""\
 <!DOCTYPE html>
 <html>
     <head>
+        <link href="https://fonts.googleapis.com/css?family=Exo+2&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
         <style>
-            h1{
-            text-align:center;
+            *{
+            font-family: 'Exo 2', sans-serif;
+            color:rgb(1,130,172);
             }
             p{
-                color:rgb(104,120,177);
+                text-align:left;
                 font-size:16px;
-                text-align:center
+                align-content: flex-end;    
             }
+            #logesh{
+                width:10%;
+                height:auto;
+                
+            }
+            #acm-logo{
+                width:7%;
+                height:auto;
+                margin-right: 1%;
+            }
+           
         </style>
     </head>
     <body>
-        <img src='http://drive.google.com/uc?export=view&id=1VZV9afF4s6RtBi9DTbj4nJbvTvQo9Awi'/>
-        <h1 style="">Hello """+ name + '!'+"""</h1>
+        <div class="container">
+            <div class="jumbotron">
+                <img src="../images/svce_acm_logo.png" id="acm-logo" style="display:inline;">
+                <h1 style="display:inline; white-space:nowrap;">SVCE-ACM STUDENT CHAPTER</h1>
+            </div>
+        <!-- <img src='http://drive.google.com/uc?export=view&id=1VZV9afF4s6RtBi9DTbj4nJbvTvQo9Awi' class ="img-responsive" id="logesh" > -->
+        <h1>Hello """+ name + '!'+','"""</h1>
         <p>
 Your Team has been successfully registered for our annual event, Yet Another Hackathon 2019!<br>
 You'll be receiving further information about your registration for the hackathon before 20th of September,2019.
@@ -65,6 +84,7 @@ Best regards,
 Student Chapter, SVCE-ACM
         </p>
         <img src='http://drive.google.com/uc?export=view&id=1YrkBxNsLa1ZeptRJ6sU79W_i1-UYBJx7'>
+    </div>
     </body>
 </html>
 """, subtype='html')
